@@ -1,0 +1,82 @@
+.flexItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;   
+}
+.flexItem:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
+}
+
+.btns{
+    margin-top:20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+background-color: lightblue;
+padding: 5px 10px;
+border-radius: 5px;
+border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .flexItem {
+        width: calc(33.33% - 10px); /* Three items per row on medium screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .flexItem {
+        width: calc(25% - 10px); /* Four items per row on larger screens */
+    }
+}
+
+.flexItemContainer {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image {
+    width: 100%; /* Ensure image takes full width */
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 5px;
+}
+
+.skills {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 10px 0px 10px 0px;
+    gap: 10px;
+}
+
+.skill {
+    list-style: none;
+    background-color: #cfcccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
