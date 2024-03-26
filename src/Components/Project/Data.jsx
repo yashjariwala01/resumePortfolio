@@ -2,7 +2,7 @@ export const ProjectData=[
     {
         id:1,
         title: "Movies in detail - movies Information Application",
-        category:'Major',
+        category:'Major projects',
         imageSrc: "projects/moviesindetail.png",
         description: "A movie information application with top-notch css",
         skills: ["ReactJs", "Redux", "SCSS"],
@@ -12,7 +12,7 @@ export const ProjectData=[
       {
         id:2,
         title: "MERN Stack Social Media Platform",
-        category:'Major',
+        category:'Major projects',
         imageSrc: "projects/socialMedia.png",
         description: "This is a project made to learn the latest languages by building an app.",
         skills: ["MongoDB", "React" ,"Express", "Node"],
@@ -22,7 +22,7 @@ export const ProjectData=[
       {
         id:3,
         title: "Key-Skill Typing website ",
-        category:"Major",
+        category:"Major projects",
         imageSrc: "projects/typingTest.png",
         description: "This is a project made to learn the latest languages by building an app.",
         skills: ["React", "Firebase", "Toastify"],
@@ -163,7 +163,7 @@ export const ProjectData=[
 
 export const projectsNav=[
     {
-        name:'Major'
+        name:'Major projects'
     },
     {
         name:"LinkedIn's Mini-Project challenge"

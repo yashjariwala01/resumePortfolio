@@ -5,17 +5,19 @@ import { projectsNav } from './Data'
 import ProjectItem from './ProjectItem'
 
 const Project = () => {
-    const [item,setItem] = useState({name:'major'});
+    const [item,setItem] = useState({name:'Major projects'});
     const [projects, setProjects] = useState([]);
     const [active,setActive] = useState(0);
 
     useEffect(()=>{
-        if(item.name === 'major'){
-            setProjects(ProjectData);
+        if(item.name == 'Major projects'){
+            const majorProject = ProjectData.filter(project=> project.category === item.name)
+            setProjects(majorProject);
         }else{
             const newProjects = ProjectData.filter(project=> project.category === item.name)
             setProjects(newProjects);
         }
+        console.log(item.name)
     },[item]);
 
     const handleClick=(e,index)=>{

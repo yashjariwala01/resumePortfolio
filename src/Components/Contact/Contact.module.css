@@ -1,4 +1,4 @@
-@import "../../vars.css";
+/* @import "../../vars.css";
 
 .container {
   color: var(--color-text);
@@ -60,5 +60,79 @@
 
   .links {
     align-items: center;
+  }
+} */
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 10vh;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 5vw 10%;
+  gap: 2vw;
+}
+
+.text h2 {
+  font-size: 4vw;
+  font-weight: 700;
+  letter-spacing: 0.4vw;
+}
+
+.text p {
+  font-size: 3vw;
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style: none;
+  gap: 1.5vw;
+}
+
+.link {
+  display: flex;
+  align-items: start;
+  gap: 2vw;
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-weight: 400;
+  letter-spacing: 0.15vw;
+}
+
+.link svg {
+  width: 3vw; /* Adjust icon size for responsiveness */
+  height: 3vw; /* Adjust icon size for responsiveness */
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+
+  .link svg {
+    width: 5vw; /* Adjust icon size for smaller screens */
+    height: 5vw; /* Adjust icon size for smaller screens */
   }
 }

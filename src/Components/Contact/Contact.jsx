@@ -1,7 +1,11 @@
 import React from "react";
-
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Contact = () => {
   return (
@@ -10,24 +14,21 @@ const Contact = () => {
         <h2>Get Connected </h2>
         <p>reach me out!</p>
       </div>
-      <ul className={styles.links}>
+      <ul className={styles.links} style={{alignItems:'start'}}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
+          <HiOutlineMail style={{color:'white'}}/>
           <a href="mailto:jariwala.yash02@gmail.com">jariwala.yash02@gmail.com</a>
         </li>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
+          <FaLinkedin style={{color:"white"}} />
           <a href="https://www.linkedin.com/in/yash-jariwala-linked-in/">linkedin.com/Yash-Jariwala</a>
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
+          <FaGithub style={{color:"white"}}/>
           <a href="https://github.com/yashjariwala01">github</a>
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/whatsapp.png")} width={50} height={60} alt="whatsapp icon" />
+          <FaWhatsapp style={{color:"white"}}/>
           <a href="https://wa.me/919009651043">whatsapp</a>
         </li>
       </ul>
