@@ -32,7 +32,7 @@ export const ProjectData=[
       {
         id:4,
         title: "Star Wars Planet Application",
-        category: "LinkedIn's Mini-Project challenge",
+        category: "Minor projects",
         imageSrc: "projects/starwars.png",
         description: "This is a project for getting the information of planets of star wars with the help of API",
         skills: ["React","Redux" ,"CSS"],
@@ -42,7 +42,7 @@ export const ProjectData=[
       {
         id:5,
         title: "Mini Ed-Tech",
-        category: "LinkedIn's Mini-Project challenge",
+        category: "Minor projects",
         imageSrc: "projects/edtech.png",
         description: "This id a mini-project for Ed-Tech involves user profile and tracking improving with live search functionality",
         skills: ["React", "Redux", "Tailwind CSS"],
@@ -158,6 +158,16 @@ export const ProjectData=[
         skills: ["React", "CSS"],
         demo: "https://weather-application-mini-project-series.vercel.app/",
         source: "https://github.com/yashjariwala01/weather-application-mini-project-series"
+      },
+      {
+        id:17,
+        title: "Weather Application",
+        category: "Minor projects",
+        imageSrc: "projects/weatherBetter.png",
+        description: "This is a mini-project for getting the Weather condition of the particular city you want",
+        skills: ["React", "CSS"],
+        demo: "https://weather-forecasting-application-assignment.vercel.app/",
+        source: "https://github.com/yashjariwala01/Weather-ForecastingApplication-Assignment"
       }
 ]
 
@@ -166,6 +176,9 @@ export const projectsNav=[
         name:'Major projects'
     },
     {
-        name:"LinkedIn's Mini-Project challenge"
+      name:'Minor projects'
+    },
+    {
+      name:"LinkedIn's Mini-Project challenge"
     },
 ]
